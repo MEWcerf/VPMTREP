@@ -24,3 +24,5 @@ C:\Users\Ramil\source\repos\Laba05041\Laba05041\obj\Debug\Laba05041.csproj.Gener
 C:\Users\Ramil\source\repos\Laba05041\Laba05041\obj\Debug\Laba05041.csproj.CoreCompileInputs.cache
 C:\Users\Ramil\source\repos\Laba05041\Laba05041\obj\Debug\Laba05041.exe
 C:\Users\Ramil\source\repos\Laba05041\Laba05041\obj\Debug\Laba05041.pdb
+C:\Users\Ramil\source\repos\Laba05041\Laba05041\obj\Debug\Dictionary.baml
+C:\Users\Ramil\source\repos\Laba05041\Laba05041\obj\Debug\App.baml
