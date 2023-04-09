@@ -5,5 +5,43 @@
         <Setter Property="Padding" Value="0"/>
     </Style>
 
+    <LinearGradientBrush x:Key="BackgroundWindowResource">
+        <GradientStop Offset="0.00" Color="#FF00A0DE"/>
+        <GradientStop Offset="0.50" Color="Azure"/>
+        <GradientStop Offset="1.00" Color="#FF999CFF"/>
+    </LinearGradientBrush>
+    
+    <Style TargetType="TextBlock" x:Key="baseTextBlockResource">
+        <Setter Property="Margin" Value="25,15,25,5"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontFamily" Value="Verdana"/>
+    </Style>
+
+    <Style TargetType="TextBlock" BasedOn="{StaticResource baseTextBlockResource}" x:Key="hederTextBlockResource">
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style TargetType="Button" x:Key="buttonResource">
+        <Setter Property="Margin" Value="25,15"/>
+        <Setter Property="Width" Value="60"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style TargetType="ToolBar" x:Key="toolBarResources">
+        <Setter Property="Margin" Value="3"/>
+        <Setter Property="Height" Value="41"/>
+    </Style>
+
+    <Style TargetType="Button" x:Key="toolbutton">
+        <Setter Property="Margin" Value="5,2,5,2"/>
+    </Style>
+
+    <Style TargetType="Image" x:Key="ImageBar">
+        <Setter Property="Height" Value="21"/> 
+        <Setter Property="Width" Value="22"/>
+    </Style>
+        
+    
 
 </ResourceDictionary>

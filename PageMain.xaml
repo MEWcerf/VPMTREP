@@ -8,34 +8,25 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageMain">
 
-    <StackPanel>
-        <StackPanel.Background>
-            <LinearGradientBrush>
-                <LinearGradientBrush.GradientStops>
-                    <GradientStop Offset="0.00" Color="#FF87A0DE"/>
-                    <GradientStop Offset="0.50" Color="Azure"/>
-                    <GradientStop Offset="1.00" Color="#FF009CFF"/>
-                </LinearGradientBrush.GradientStops>
-            </LinearGradientBrush>
-        </StackPanel.Background>
+    <StackPanel Background="{StaticResource BackgroundWindowResource}">
 
-        <TextBlock Margin="25,30,25,5" FontSize="24">
+        <TextBlock Style="{StaticResource hederTextBlockResource}">
             Система внутренного учета инвестиционной компании
         </TextBlock>
 
 
-        <TextBlock Margin="25,30,550,5" FontSize="20">
+        <TextBlock Style="{StaticResource baseTextBlockResource}">
             <Hyperlink NavigateUri="employee.xaml">Сотрудники</Hyperlink>
         </TextBlock>
-        <TextBlock Margin="25,10,550,5" FontSize="20">
+        <TextBlock Style="{StaticResource baseTextBlockResource}">
             <Hyperlink NavigateUri="Client.xaml">Клиенты</Hyperlink>
         </TextBlock>
-        <TextBlock Margin="25,10,550,5" FontSize="20">
+        <TextBlock Style="{StaticResource baseTextBlockResource}">
             <Hyperlink NavigateUri="contract.xaml">Договоры</Hyperlink>
         </TextBlock>
-        <TextBlock Margin="25,10,550,5" FontSize="20">
+        <TextBlock Style="{StaticResource baseTextBlockResource}">
             <Hyperlink NavigateUri="reference.xaml">Справка</Hyperlink>
         </TextBlock>
-        <Button Margin="25,25" Width="70" HorizontalAlignment="Left" FontSize="20">Выход</Button>
+        <Button Style="{StaticResource buttonResource}" Command="Close">Выход</Button>
     </StackPanel>
 </Page>

@@ -8,16 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="employee">
 
-    <StackPanel>
-        <StackPanel.Background>
-            <LinearGradientBrush>
-                <LinearGradientBrush.GradientStops>
-                    <GradientStop Offset="0.00" Color="#FF87A0DE"/>
-                    <GradientStop Offset="0.50" Color="Azure"/>
-                    <GradientStop Offset="1.00" Color="#FF009CFF"/>
-                </LinearGradientBrush.GradientStops>
-            </LinearGradientBrush>
-        </StackPanel.Background>
+    <StackPanel  Background="{StaticResource BackgroundWindowResource}">
+
         <Menu>
             <MenuItem Header="Действие">
                 <MenuItem Header="Отменить"/>
@@ -31,7 +23,7 @@
             <MenuItem Header="Отчет"/>
         </Menu>
 
-        <ToolBar Name="Tool1" Margin="3" Height="41">
+        <ToolBar Style="{StaticResource toolBarResources}">
             <Button Name="Undo" 
                     ToolTip="Отменить редактирование/создание"
                     Margin="5,2,5,2">
@@ -49,31 +41,31 @@
 
             <Button Name="Add"
                     ToolTip="Создать сотрудника"
-                    Margin="5,2,5,2">
-                <Image Source="Panel/plus.png" Height="21" Width="22" />
+                    Style ="{StaticResource toolbutton}">
+                <Image Source="Panel/plus.png"  Style="{StaticResource ImageBar}" />
             </Button>
 
             <Button Name="Edit"
                     ToolTip="Редактирровать данные"
-                    Margin="5,2,5,2">
-                <Image Source="Panel/pencil.png" Height="21" Width="22" />
+                    Style ="{StaticResource toolbutton}">
+                <Image Source="Panel/pencil.png" Style="{StaticResource ImageBar}" />
             </Button>
 
             <Button Name="Find"
                     ToolTip="Найти данные о сотруднике"
-                    Margin="5,2,5,2">
-                <Image Source="Panel/binoculars.png" Height="21" Width="22" />
+                    Style ="{StaticResource toolbutton}">
+                <Image Source="Panel/binoculars.png" Style="{StaticResource ImageBar}" />
             </Button>
 
             <Button Name="Save"
                     ToolTip="Сохранить изменения"
-                    Margin="5,2,5,2">
-                <Image Source="Panel/Save.png" Height="21" Width="22" />
+                    Style ="{StaticResource toolbutton}">
+                <Image Source="Panel/Save.png" Style="{StaticResource ImageBar}" />
             </Button>
 
             <Button Name="Delet" 
-                    ToolTip="Удалить сотрудника" Height="38" Width="34">
-                <Image Source="Panel/delete.png" Height="21" Width="22" />
+                    ToolTip="Удалить сотрудника" >
+                <Image Source="Panel/delete.png" Style="{StaticResource ImageBar}" />
             </Button>
         </ToolBar>
 
